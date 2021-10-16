@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Run Bazel",
+      "setup": "npm install @bazel/bazelisk",
+      "run": "export XDG_CACHE_HOME=. && ./node_modules/.bin/bazel build ... && ./node_modules/.bin/bazel run //:app_test",
+      "input": "",
+      "output": "Bazel Test",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}
